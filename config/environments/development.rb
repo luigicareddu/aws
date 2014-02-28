@@ -28,6 +28,6 @@ Aws::Application.configure do
   config.assets.debug = true
 
   #Devise
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }  
+  config.action_mailer.default_url_options = { :host => 'ub01:3000' }  
   
 end
