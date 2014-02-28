@@ -1,0 +1,45 @@
+<%= form_for(@plane) do |f| %>
+  <% if @plane.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@plane.errors.count, "error") %> prohibited this plane from being saved:</h2>
+
+      <ul>
+      <% @plane.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :operator %><br>
+    <%= f.text_field :operator %>
+  </div>
+  <div class="field">
+    <%= f.label :body %><br>
+    <%= f.text_field :body %>
+  </div>
+  <div class="field">
+    <%= f.label :group %><br>
+    <%= f.text_field :group %>
+  </div>
+  <div class="field">
+    <%= f.label :ac_typ %><br>
+    <%= f.text_field :ac_typ %>
+  </div>
+  <div class="field">
+    <%= f.label :ac_reg %><br>
+    <%= f.text_field :ac_reg %>
+  </div>
+  <div class="field">
+    <%= f.label :ph_out %><br>
+    <%= f.check_box :ph_out %>
+  </div>
+  <div class="field">
+    <%= f.label :note %><br>
+    <%= f.text_area :note %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

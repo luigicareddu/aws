@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Operator:</strong>
+  <%= @plane.operator %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @plane.body %>
+</p>
+
+<p>
+  <strong>Group:</strong>
+  <%= @plane.group %>
+</p>
+
+<p>
+  <strong>Ac typ:</strong>
+  <%= @plane.ac_typ %>
+</p>
+
+<p>
+  <strong>Ac reg:</strong>
+  <%= @plane.ac_reg %>
+</p>
+
+<p>
+  <strong>Ph out:</strong>
+  <%= @plane.ph_out %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @plane.note %>
+</p>
+
+<%= link_to 'Edit', edit_plane_path(@plane), class: 'btn btn-default' %>
+<%= link_to 'Index', planes_path, class: 'btn btn-primary' %>

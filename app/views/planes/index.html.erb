@@ -1,0 +1,39 @@
+<h1>Planes</h1>
+
+<table class='table table-striped'>
+  <thead>
+    <tr>
+      <th>Operator</th>
+      <th>Body</th>
+      <th>Group</th>
+      <th>Ac typ</th>
+      <th>Ac reg</th>
+      <th>Ph out</th>
+      <th>Note</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @planes.each do |plane| %>
+      <tr>
+        <td><%= plane.operator %></td>
+        <td><%= plane.body %></td>
+        <td><%= plane.group %></td>
+        <td><%= plane.ac_typ %></td>
+        <td><%= plane.ac_reg %></td>
+        <td><%= plane.ph_out %></td>
+        <td><%= plane.note %></td>
+        <td><%= link_to 'Show', plane, class: 'btn btn-default btn-xs' %></td>
+        <td><%= link_to 'Edit', edit_plane_path(plane), class: 'btn btn-default btn-xs' %></td>
+        <td><%= link_to 'Destroy', plane, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-xs' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Plane', new_plane_path, class: 'btn btn-primary' %>
