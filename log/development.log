@@ -1333,3 +1333,1120 @@ Processing by PlanesController#index as HTML
   [1m[35mPlane Load (0.3ms)[0m  SELECT "planes".* FROM "planes"
   Rendered planes/index.html.erb within layouts/application (2.9ms)
 Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/planes/1/edit" for 172.31.86.109 at 2014-02-28 13:37:35 +0100
+Processing by PlanesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlane Load (0.4ms)[0m  [1mSELECT "planes".* FROM "planes" WHERE "planes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered planes/_form.html.erb (5.7ms)
+  Rendered planes/edit.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 24ms (Views: 20.4ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/planes/1" for 172.31.86.109 at 2014-02-28 13:37:40 +0100
+Processing by PlanesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rA8pLEbk3rUaWCPV9yZmjiBkXHoCJY5HGovATUC/TCs=", "plane"=>{"operator"=>"AZ", "body"=>"NB", "group"=>"320", "ac_typ"=>"319", "ac_reg"=>"IML", "ph_out"=>"1", "note"=>""}, "commit"=>"Update Plane", "id"=>"1"}
+  [1m[35mPlane Load (0.2ms)[0m  SELECT "planes".* FROM "planes" WHERE "planes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.8ms)[0m  UPDATE "planes" SET "ph_out" = ?, "updated_at" = ? WHERE "planes"."id" = 1  [["ph_out", true], ["updated_at", Fri, 28 Feb 2014 12:37:40 UTC +00:00]]
+  [1m[36m (187.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://ub01:3000/planes/1
+Completed 302 Found in 199ms (ActiveRecord: 191.9ms)
+
+
+Started GET "/planes/1" for 172.31.86.109 at 2014-02-28 13:37:40 +0100
+Processing by PlanesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlane Load (0.2ms)[0m  SELECT "planes".* FROM "planes" WHERE "planes"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered planes/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/planes.css?body=1" for 172.31.86.109 at 2014-02-28 13:37:40 +0100
+
+
+Started GET "/stylesheets/scaffolds.css.old.css" for 172.31.86.109 at 2014-02-28 13:37:40 +0100
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/scaffolds.css.old.css"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  passenger (4.0.36) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.36) lib/phusion_passenger/request_handler/thread_handler.rb:142:in `accept_and_process_next_request'
+  passenger (4.0.36) lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  passenger (4.0.36) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+  Rendered /home/luigi/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/luigi/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /home/luigi/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/luigi/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (24.3ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 172.31.86.109 at 2014-02-28 13:37:40 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 172.31.86.109 at 2014-02-28 13:37:40 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 172.31.86.109 at 2014-02-28 13:37:40 +0100
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:37:42 +0100
+Processing by PlanesController#index as HTML
+  [1m[36mPlane Load (0.3ms)[0m  [1mSELECT "planes".* FROM "planes"[0m
+  Rendered planes/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:40:30 +0100
+Processing by PlanesController#index as HTML
+  [1m[35mPlane Load (0.3ms)[0m  SELECT "planes".* FROM "planes"
+  Rendered planes/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/planes.css?body=1" for 172.31.86.109 at 2014-02-28 13:40:30 +0100
+
+
+
+
+Started GET "/assets/application.css?body=1" for 172.31.86.109 at 2014-02-28 13:40:30 +0100
+Started GET "/assets/planes.js?body=1" for 172.31.86.109 at 2014-02-28 13:40:30 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.31.86.109 at 2014-02-28 13:40:30 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/stylesheets/scaffolds.css.old.css" for 172.31.86.109 at 2014-02-28 13:40:30 +0100
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/scaffolds.css.old.css"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  passenger (4.0.36) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.36) lib/phusion_passenger/request_handler/thread_handler.rb:142:in `accept_and_process_next_request'
+  passenger (4.0.36) lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  passenger (4.0.36) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+  Rendered /home/luigi/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/luigi/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /home/luigi/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /home/luigi/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (27.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 172.31.86.109 at 2014-02-28 13:40:30 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 172.31.86.109 at 2014-02-28 13:40:30 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.31.86.109 at 2014-02-28 13:40:30 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.31.86.109 at 2014-02-28 13:40:30 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 172.31.86.109 at 2014-02-28 13:40:30 +0100
+
+
+Started GET "/assets/application.js?body=1" for 172.31.86.109 at 2014-02-28 13:40:30 +0100
+
+
+Started GET "/" for 172.31.86.109 at 2014-02-28 13:40:32 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 101ms (Views: 74.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:40:34 +0100
+Processing by PlanesController#index as HTML
+  [1m[35mPlane Load (0.3ms)[0m  SELECT "planes".* FROM "planes"
+  Rendered planes/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 33ms (Views: 29.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 172.31.86.109 at 2014-02-28 13:40:35 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:40:36 +0100
+Processing by PlanesController#index as HTML
+  [1m[36mPlane Load (0.3ms)[0m  [1mSELECT "planes".* FROM "planes"[0m
+  Rendered planes/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:42:28 +0100
+Processing by PlanesController#index as HTML
+  [1m[35mPlane Load (0.3ms)[0m  SELECT "planes".* FROM "planes"
+  Rendered planes/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/planes.css?body=1" for 172.31.86.109 at 2014-02-28 13:42:28 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 172.31.86.109 at 2014-02-28 13:42:28 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.31.86.109 at 2014-02-28 13:42:28 +0100
+
+
+Started GET "/assets/application.css?body=1" for 172.31.86.109 at 2014-02-28 13:42:28 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 172.31.86.109 at 2014-02-28 13:42:28 +0100
+
+
+Started GET "/stylesheets/scaffolds.css.old.css" for 172.31.86.109 at 2014-02-28 13:42:28 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/scaffolds.css.old.css"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  passenger (4.0.36) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.36) lib/phusion_passenger/request_handler/thread_handler.rb:142:in `accept_and_process_next_request'
+  passenger (4.0.36) lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  passenger (4.0.36) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+
+
+Started GET "/assets/jquery.js?body=1" for 172.31.86.109 at 2014-02-28 13:42:28 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.31.86.109 at 2014-02-28 13:42:28 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.31.86.109 at 2014-02-28 13:42:28 +0100
+  Rendered /home/luigi/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 172.31.86.109 at 2014-02-28 13:42:28 +0100
+
+
+Started GET "/assets/application.js?body=1" for 172.31.86.109 at 2014-02-28 13:42:28 +0100
+  Rendered /home/luigi/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /home/luigi/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/luigi/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (58.8ms)
+
+
+Started GET "/" for 172.31.86.109 at 2014-02-28 13:42:38 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:42:39 +0100
+Processing by PlanesController#index as HTML
+  [1m[36mPlane Load (0.3ms)[0m  [1mSELECT "planes".* FROM "planes"[0m
+  Rendered planes/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.31.86.109 at 2014-02-28 13:42:40 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:42:41 +0100
+Processing by PlanesController#index as HTML
+  [1m[35mPlane Load (0.3ms)[0m  SELECT "planes".* FROM "planes"
+  Rendered planes/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePosts (20140228124713)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "open" boolean, "critical" boolean, "private" boolean, "ac_reg" varchar(255), "station" varchar(255), "text" text, "date" date, "shift" varchar(255), "author" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140228124713"]]
+  [1m[36m (206.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:48:11 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlanesController#index as HTML
+  [1m[35mPlane Load (0.3ms)[0m  SELECT "planes".* FROM "planes"
+  Rendered planes/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 277ms (Views: 273.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/planes.css?body=1" for 172.31.86.109 at 2014-02-28 13:48:12 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.31.86.109 at 2014-02-28 13:48:12 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 172.31.86.109 at 2014-02-28 13:48:12 +0100
+
+
+Started GET "/assets/application.css?body=1" for 172.31.86.109 at 2014-02-28 13:48:12 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.31.86.109 at 2014-02-28 13:48:12 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 172.31.86.109 at 2014-02-28 13:48:12 +0100
+
+
+Started GET "/stylesheets/scaffolds.css.old.css" for 172.31.86.109 at 2014-02-28 13:48:12 +0100
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/scaffolds.css.old.css"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  passenger (4.0.36) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.36) lib/phusion_passenger/request_handler/thread_handler.rb:142:in `accept_and_process_next_request'
+  passenger (4.0.36) lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  passenger (4.0.36) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+  Rendered /home/luigi/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/luigi/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /home/luigi/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.4ms)
+  Rendered /home/luigi/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (34.4ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 172.31.86.109 at 2014-02-28 13:48:12 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 172.31.86.109 at 2014-02-28 13:48:12 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.31.86.109 at 2014-02-28 13:48:12 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.31.86.109 at 2014-02-28 13:48:12 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 172.31.86.109 at 2014-02-28 13:48:12 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 172.31.86.109 at 2014-02-28 13:48:12 +0100
+
+
+Started GET "/assets/application.js?body=1" for 172.31.86.109 at 2014-02-28 13:48:12 +0100
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:48:13 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 23ms (Views: 19.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:48:14 +0100
+Processing by PlanesController#index as HTML
+  [1m[35mPlane Load (0.3ms)[0m  SELECT "planes".* FROM "planes"
+  Rendered planes/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:48:15 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:48:16 +0100
+Processing by PlanesController#index as HTML
+  [1m[35mPlane Load (0.3ms)[0m  SELECT "planes".* FROM "planes"
+  Rendered planes/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:48:17 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:48:35 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.31.86.109 at 2014-02-28 13:48:35 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.31.86.109 at 2014-02-28 13:48:35 +0100
+
+
+Started GET "/assets/planes.css?body=1" for 172.31.86.109 at 2014-02-28 13:48:35 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/planes.js?body=1" for 172.31.86.109 at 2014-02-28 13:48:35 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 172.31.86.109 at 2014-02-28 13:48:35 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 172.31.86.109 at 2014-02-28 13:48:35 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 172.31.86.109 at 2014-02-28 13:48:35 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.31.86.109 at 2014-02-28 13:48:35 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.31.86.109 at 2014-02-28 13:48:35 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 172.31.86.109 at 2014-02-28 13:48:35 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 172.31.86.109 at 2014-02-28 13:48:35 +0100
+
+
+Started GET "/assets/application.js?body=1" for 172.31.86.109 at 2014-02-28 13:48:35 +0100
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:48:49 +0100
+Processing by PlanesController#index as HTML
+  [1m[35mPlane Load (0.3ms)[0m  SELECT "planes".* FROM "planes"
+  Rendered planes/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 122ms (Views: 93.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:48:50 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 16ms (Views: 12.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:49:15 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.31.86.109 at 2014-02-28 13:49:15 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.31.86.109 at 2014-02-28 13:49:15 +0100
+
+
+Started GET "/assets/planes.css?body=1" for 172.31.86.109 at 2014-02-28 13:49:15 +0100
+
+
+
+
+Started GET "/assets/posts.css?body=1" for 172.31.86.109 at 2014-02-28 13:49:15 +0100
+Started GET "/assets/planes.js?body=1" for 172.31.86.109 at 2014-02-28 13:49:15 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 172.31.86.109 at 2014-02-28 13:49:15 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 172.31.86.109 at 2014-02-28 13:49:15 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.31.86.109 at 2014-02-28 13:49:15 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/posts.js?body=1" for 172.31.86.109 at 2014-02-28 13:49:15 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.31.86.109 at 2014-02-28 13:49:15 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 172.31.86.109 at 2014-02-28 13:49:15 +0100
+
+
+Started GET "/assets/application.js?body=1" for 172.31.86.109 at 2014-02-28 13:49:15 +0100
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:49:27 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 104ms (Views: 69.2ms | ActiveRecord: 0.3ms)
+
+
+
+
+Started GET "/assets/planes.css?body=1" for 172.31.86.109 at 2014-02-28 13:49:27 +0100
+Started GET "/assets/application.css?body=1" for 172.31.86.109 at 2014-02-28 13:49:27 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.31.86.109 at 2014-02-28 13:49:27 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 172.31.86.109 at 2014-02-28 13:49:27 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 172.31.86.109 at 2014-02-28 13:49:27 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 172.31.86.109 at 2014-02-28 13:49:27 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.31.86.109 at 2014-02-28 13:49:27 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.31.86.109 at 2014-02-28 13:49:27 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 172.31.86.109 at 2014-02-28 13:49:27 +0100
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/assets/welcome.js?body=1" for 172.31.86.109 at 2014-02-28 13:49:27 +0100
+
+
+Started GET "/assets/application.js?body=1" for 172.31.86.109 at 2014-02-28 13:49:27 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 172.31.86.109 at 2014-02-28 13:49:27 +0100
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:49:30 +0100
+Processing by PlanesController#index as HTML
+  [1m[36mPlane Load (0.3ms)[0m  [1mSELECT "planes".* FROM "planes"[0m
+  Rendered planes/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 29ms (Views: 25.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:49:31 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:49:31 +0100
+Processing by PlanesController#index as HTML
+  [1m[36mPlane Load (0.3ms)[0m  [1mSELECT "planes".* FROM "planes"[0m
+  Rendered planes/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:49:32 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:50:00 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/planes.css?body=1" for 172.31.86.109 at 2014-02-28 13:50:00 +0100
+
+
+Started GET "/assets/application.css?body=1" for 172.31.86.109 at 2014-02-28 13:50:00 +0100
+
+
+
+
+Started GET "/assets/planes.js?body=1" for 172.31.86.109 at 2014-02-28 13:50:00 +0100
+Started GET "/assets/bootstrap.css?body=1" for 172.31.86.109 at 2014-02-28 13:50:00 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/jquery.js?body=1" for 172.31.86.109 at 2014-02-28 13:50:00 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.31.86.109 at 2014-02-28 13:50:00 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 172.31.86.109 at 2014-02-28 13:50:00 +0100
+
+
+
+
+Started GET "/assets/posts.js?body=1" for 172.31.86.109 at 2014-02-28 13:50:00 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.31.86.109 at 2014-02-28 13:50:00 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 172.31.86.109 at 2014-02-28 13:50:00 +0100
+
+
+Started GET "/assets/application.js?body=1" for 172.31.86.109 at 2014-02-28 13:50:00 +0100
+Started GET "/assets/welcome.css?body=1" for 172.31.86.109 at 2014-02-28 13:50:00 +0100
+
+
+Started GET "/" for 172.31.86.109 at 2014-02-28 13:50:44 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 93ms (Views: 66.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:50:45 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 26ms (Views: 15.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:50:46 +0100
+Processing by PlanesController#index as HTML
+  [1m[36mPlane Load (0.3ms)[0m  [1mSELECT "planes".* FROM "planes"[0m
+  Rendered planes/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 27ms (Views: 23.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:50:47 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.31.86.109 at 2014-02-28 13:50:47 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:50:48 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:50:48 +0100
+Processing by PlanesController#index as HTML
+  [1m[35mPlane Load (0.3ms)[0m  SELECT "planes".* FROM "planes"
+  Rendered planes/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:50:51 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.31.86.109 at 2014-02-28 13:50:52 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:52:01 +0100
+Processing by PlanesController#index as HTML
+  [1m[35mPlane Load (0.3ms)[0m  SELECT "planes".* FROM "planes"
+  Rendered planes/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:52:04 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for 172.31.86.109 at 2014-02-28 13:52:06 +0100
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (68.5ms)
+  Rendered posts/new.html.erb within layouts/application (72.7ms)
+Completed 200 OK in 84ms (Views: 81.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/posts" for 172.31.86.109 at 2014-02-28 13:52:25 +0100
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rA8pLEbk3rUaWCPV9yZmjiBkXHoCJY5HGovATUC/TCs=", "post"=>{"open"=>"1", "critical"=>"0", "private"=>"0", "ac_reg"=>"IML", "station"=>"FCO", "text"=>"prova di testo", "date(1i)"=>"2014", "date(2i)"=>"2", "date(3i)"=>"28", "shift"=>"M", "author"=>"Careddu"}, "commit"=>"Create Post"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (3.3ms)[0m  [1mINSERT INTO "posts" ("ac_reg", "author", "created_at", "critical", "date", "open", "private", "shift", "station", "text", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["ac_reg", "IML"], ["author", "Careddu"], ["created_at", Fri, 28 Feb 2014 12:52:25 UTC +00:00], ["critical", false], ["date", Fri, 28 Feb 2014], ["open", true], ["private", false], ["shift", "M"], ["station", "FCO"], ["text", "prova di testo"], ["updated_at", Fri, 28 Feb 2014 12:52:25 UTC +00:00]]
+  [1m[35m (203.4ms)[0m  commit transaction
+Redirected to http://ub01:3000/posts/1
+Completed 302 Found in 214ms (ActiveRecord: 207.0ms)
+
+
+Started GET "/posts/1" for 172.31.86.109 at 2014-02-28 13:52:25 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered posts/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 15ms (Views: 10.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/planes.css?body=1" for 172.31.86.109 at 2014-02-28 13:52:25 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 172.31.86.109 at 2014-02-28 13:52:25 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 172.31.86.109 at 2014-02-28 13:52:25 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 172.31.86.109 at 2014-02-28 13:52:25 +0100
+
+
+
+
+Started GET "/assets/welcome.js?body=1" for 172.31.86.109 at 2014-02-28 13:52:25 +0100
+Started GET "/assets/posts.js?body=1" for 172.31.86.109 at 2014-02-28 13:52:25 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:52:27 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 121ms (Views: 92.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:52:38 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.31.86.109 at 2014-02-28 13:52:38 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.31.86.109 at 2014-02-28 13:52:38 +0100
+
+
+Started GET "/assets/planes.css?body=1" for 172.31.86.109 at 2014-02-28 13:52:38 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 172.31.86.109 at 2014-02-28 13:52:38 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 172.31.86.109 at 2014-02-28 13:52:38 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 172.31.86.109 at 2014-02-28 13:52:38 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 172.31.86.109 at 2014-02-28 13:52:38 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.31.86.109 at 2014-02-28 13:52:38 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.31.86.109 at 2014-02-28 13:52:38 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 172.31.86.109 at 2014-02-28 13:52:38 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 172.31.86.109 at 2014-02-28 13:52:38 +0100
+
+
+Started GET "/assets/application.js?body=1" for 172.31.86.109 at 2014-02-28 13:52:38 +0100
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:52:41 +0100
+Processing by PlanesController#index as HTML
+  [1m[35mPlane Load (0.3ms)[0m  SELECT "planes".* FROM "planes"
+  Rendered planes/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:52:42 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/1/edit" for 172.31.86.109 at 2014-02-28 13:53:25 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered posts/_form.html.erb (9.4ms)
+  Rendered posts/edit.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/1/edit" for 172.31.86.109 at 2014-02-28 13:53:32 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered posts/_form.html.erb (17.3ms)
+  Rendered posts/edit.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.2ms)
+
+
+
+
+Started GET "/assets/planes.css?body=1" for 172.31.86.109 at 2014-02-28 13:53:32 +0100
+Started GET "/assets/planes.js?body=1" for 172.31.86.109 at 2014-02-28 13:53:32 +0100
+
+
+Started GET "/assets/application.css?body=1" for 172.31.86.109 at 2014-02-28 13:53:32 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.31.86.109 at 2014-02-28 13:53:32 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 172.31.86.109 at 2014-02-28 13:53:32 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 172.31.86.109 at 2014-02-28 13:53:32 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 172.31.86.109 at 2014-02-28 13:53:32 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.31.86.109 at 2014-02-28 13:53:32 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 172.31.86.109 at 2014-02-28 13:53:32 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.31.86.109 at 2014-02-28 13:53:32 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 172.31.86.109 at 2014-02-28 13:53:32 +0100
+
+
+Started GET "/assets/application.js?body=1" for 172.31.86.109 at 2014-02-28 13:53:32 +0100
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:53:50 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 121ms (Views: 91.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/new" for 172.31.86.109 at 2014-02-28 13:53:51 +0100
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (28.1ms)
+  Rendered posts/new.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:54:09 +0100
+Processing by PlanesController#index as HTML
+  [1m[36mPlane Load (0.3ms)[0m  [1mSELECT "planes".* FROM "planes"[0m
+  Rendered planes/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:54:09 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:54:33 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/planes.css?body=1" for 172.31.86.109 at 2014-02-28 13:54:33 +0100
+
+
+Started GET "/assets/application.css?body=1" for 172.31.86.109 at 2014-02-28 13:54:33 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.31.86.109 at 2014-02-28 13:54:33 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 172.31.86.109 at 2014-02-28 13:54:33 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 172.31.86.109 at 2014-02-28 13:54:33 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 172.31.86.109 at 2014-02-28 13:54:33 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.31.86.109 at 2014-02-28 13:54:33 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.31.86.109 at 2014-02-28 13:54:33 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 172.31.86.109 at 2014-02-28 13:54:33 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 172.31.86.109 at 2014-02-28 13:54:33 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 172.31.86.109 at 2014-02-28 13:54:33 +0100
+
+
+Started GET "/assets/application.js?body=1" for 172.31.86.109 at 2014-02-28 13:54:33 +0100
+
+
+Started GET "/posts/1" for 172.31.86.109 at 2014-02-28 13:54:35 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered posts/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 16ms (Views: 12.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for 172.31.86.109 at 2014-02-28 13:54:43 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered posts/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/planes.css?body=1" for 172.31.86.109 at 2014-02-28 13:54:43 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 172.31.86.109 at 2014-02-28 13:54:43 +0100
+
+
+Started GET "/assets/application.css?body=1" for 172.31.86.109 at 2014-02-28 13:54:43 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.31.86.109 at 2014-02-28 13:54:43 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 172.31.86.109 at 2014-02-28 13:54:43 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 172.31.86.109 at 2014-02-28 13:54:43 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 172.31.86.109 at 2014-02-28 13:54:43 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.31.86.109 at 2014-02-28 13:54:43 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 172.31.86.109 at 2014-02-28 13:54:43 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.31.86.109 at 2014-02-28 13:54:43 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 172.31.86.109 at 2014-02-28 13:54:43 +0100
+
+
+Started GET "/assets/application.js?body=1" for 172.31.86.109 at 2014-02-28 13:54:43 +0100
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:54:44 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:54:45 +0100
+Processing by PlanesController#index as HTML
+  [1m[36mPlane Load (0.3ms)[0m  [1mSELECT "planes".* FROM "planes"[0m
+  Rendered planes/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 27ms (Views: 23.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:54:45 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.31.86.109 at 2014-02-28 13:54:58 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:54:59 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:54:59 +0100
+Processing by PlanesController#index as HTML
+  [1m[35mPlane Load (0.3ms)[0m  SELECT "planes".* FROM "planes"
+  Rendered planes/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:55:00 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.31.86.109 at 2014-02-28 13:55:00 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:55:22 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.31.86.109 at 2014-02-28 13:55:22 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:55:23 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:55:23 +0100
+Processing by PlanesController#index as HTML
+  [1m[35mPlane Load (0.3ms)[0m  SELECT "planes".* FROM "planes"
+  Rendered planes/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:55:24 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.31.86.109 at 2014-02-28 13:55:24 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:55:25 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:55:26 +0100
+Processing by PlanesController#index as HTML
+  [1m[36mPlane Load (0.3ms)[0m  [1mSELECT "planes".* FROM "planes"[0m
+  Rendered planes/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:55:27 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.31.86.109 at 2014-02-28 13:55:27 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:55:28 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/planes" for 172.31.86.109 at 2014-02-28 13:55:29 +0100
+Processing by PlanesController#index as HTML
+  [1m[35mPlane Load (0.3ms)[0m  SELECT "planes".* FROM "planes"
+  Rendered planes/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 172.31.86.109 at 2014-02-28 13:55:29 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.31.86.109 at 2014-02-28 13:55:30 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)

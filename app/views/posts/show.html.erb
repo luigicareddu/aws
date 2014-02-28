@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Open:</strong>
+  <%= @post.open %>
+</p>
+
+<p>
+  <strong>Critical:</strong>
+  <%= @post.critical %>
+</p>
+
+<p>
+  <strong>Private:</strong>
+  <%= @post.private %>
+</p>
+
+<p>
+  <strong>Ac reg:</strong>
+  <%= @post.ac_reg %>
+</p>
+
+<p>
+  <strong>Station:</strong>
+  <%= @post.station %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @post.text %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @post.date %>
+</p>
+
+<p>
+  <strong>Shift:</strong>
+  <%= @post.shift %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @post.author %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@post), class: 'btn btn-default' %>
+<%= link_to 'Back', posts_path, class: 'btn btn-primary' %>

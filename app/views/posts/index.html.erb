@@ -1,0 +1,39 @@
+<h1>Posts</h1>
+
+<table class='table table-striped'>
+  <thead>
+    <tr>
+      <th>Open</th>
+      <th>Ac reg</th>
+      <th>Station</th>
+      <th>Text</th>
+      <th>Date</th>
+      <th>Shift</th>
+      <th>Author</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.open %></td>
+        <td><%= post.ac_reg %></td>
+        <td><%= post.station %></td>
+        <td><%= post.text %></td>
+        <td><%= post.date %></td>
+        <td><%= post.shift %></td>
+        <td><%= post.author %></td>
+        <td><%= link_to 'Show', post, class: 'btn btn-default btn-xs' %></td>
+        <td><%= link_to 'Edit', edit_post_path(post), class: 'btn btn-default btn-xs' %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-xs' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Post', new_post_path, class: 'btn btn-primary' %>

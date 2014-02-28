@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140228114008) do
+ActiveRecord::Schema.define(version: 20140228124713) do
 
   create_table "planes", force: true do |t|
     t.string   "operator"
@@ -21,6 +21,20 @@ ActiveRecord::Schema.define(version: 20140228114008) do
     t.string   "ac_reg"
     t.boolean  "ph_out"
     t.text     "note"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "posts", force: true do |t|
+    t.boolean  "open"
+    t.boolean  "critical"
+    t.boolean  "private"
+    t.string   "ac_reg"
+    t.string   "station"
+    t.text     "text"
+    t.date     "date"
+    t.string   "shift"
+    t.string   "author"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

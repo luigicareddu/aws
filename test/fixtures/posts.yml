@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  open: false
+  critical: false
+  private: false
+  ac_reg: MyString
+  station: MyString
+  text: MyText
+  date: 2014-02-28
+  shift: MyString
+  author: MyString
+
+two:
+  open: false
+  critical: false
+  private: false
+  ac_reg: MyString
+  station: MyString
+  text: MyText
+  date: 2014-02-28
+  shift: MyString
+  author: MyString
