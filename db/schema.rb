@@ -11,6 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20140228114008) do
+
+  create_table "planes", force: true do |t|
+    t.string   "operator"
+    t.string   "body"
+    t.string   "group"
+    t.string   "ac_typ"
+    t.string   "ac_reg"
+    t.boolean  "ph_out"
+    t.text     "note"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
