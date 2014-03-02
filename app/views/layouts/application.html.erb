@@ -41,10 +41,14 @@
 
         <!-- Devise -->
         <% if notice %>
-          <p class="alert alert-success"><%= notice %></p>
+          <p class="alert alert-success fade in"><%= notice %>
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+          </p>
         <% end %>
         <% if alert %>
-          <p class="alert alert-danger"><%= alert %></p>
+          <p class="alert alert-danger fade in"><%= alert %>
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+          </p>
         <% end %>
 
 		<%= yield %>
