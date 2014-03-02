@@ -8302,3 +8302,457 @@ Processing by Devise::RegistrationsController#new as HTML
   Rendered users/shared/_links.erb (0.5ms)
   Rendered users/registrations/new.html.erb within layouts/application (7.5ms)
 Completed 200 OK in 30ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started HEAD "/" for 127.0.0.1 at 2014-03-02 08:31:08 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-03-02 08:31:08 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+Processing by PostsController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (9.7ms)
+Completed 401 Unauthorized in 123ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-02 08:31:09 +0100
+Processing by Devise::SessionsController#new as HTML
+Completed 200 OK in 392ms (Views: 328.5ms | ActiveRecord: 0.0ms)
+  Rendered users/shared/_links.erb (3.9ms)
+  Rendered users/sessions/new.html.erb within layouts/application (37.3ms)
+Completed 200 OK in 354ms (Views: 233.7ms | ActiveRecord: 0.7ms)
+
+
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-03-02 08:31:09 +0100
+Started GET "/assets/planes.css?body=1" for 127.0.0.1 at 2014-03-02 08:31:09 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-02 08:31:09 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-03-02 08:31:09 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-02 08:31:09 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-02 08:31:09 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-02 08:31:09 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-02 08:31:10 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 127.0.0.1 at 2014-03-02 08:31:10 +0100
+
+
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-03-02 08:31:10 +0100
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-02 08:31:10 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-02 08:31:10 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-02 08:31:10 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-03-02 08:32:09 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0nJxfhdtaz6UPFasT0+mes7UTxXRyVTSClguA7wALbM=", "user"=>{"email"=>"luigi.careddu@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'luigi.careddu@gmail.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.7ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["last_sign_in_at", Sun, 02 Mar 2014 07:19:03 UTC +00:00], ["current_sign_in_at", Sun, 02 Mar 2014 07:32:09 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 14], ["updated_at", Sun, 02 Mar 2014 07:32:09 UTC +00:00]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 401ms (ActiveRecord: 11.9ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-03-02 08:32:09 +0100
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (37.8ms)
+Completed 200 OK in 232ms (Views: 221.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/planes.css?body=1" for 127.0.0.1 at 2014-03-02 08:32:10 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-03-02 08:32:10 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-03-02 08:32:10 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 127.0.0.1 at 2014-03-02 08:32:10 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-02 08:32:10 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-02 08:32:10 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-03-02 08:32:14 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"g396eKGfQL5j+/nwYUAMykaoJ930+UdlcWXfdNpxtoI="}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 211ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-02 08:32:15 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 211ms (Views: 209.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/planes.css?body=1" for 127.0.0.1 at 2014-03-02 08:32:15 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-03-02 08:32:15 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-02 08:32:15 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 127.0.0.1 at 2014-03-02 08:32:15 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-02 08:32:15 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-03-02 08:32:15 +0100
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-03-02 08:34:29 +0100
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 71ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-02 08:34:29 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.erb (3.4ms)
+  Rendered users/sessions/new.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 314ms (Views: 213.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2014-03-02 08:35:09 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendered users/shared/_links.erb (2.9ms)
+  Rendered users/passwords/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 36ms (Views: 32.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/password" for 127.0.0.1 at 2014-03-02 08:35:39 +0100
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ofmd+xYu7xbZVIS4PQT7IbhPVcRJmFGsMAlRkTh0zAI=", "user"=>{"email"=>"luigi.careddu@gmail.com"}, "commit"=>"Send me reset password instructions"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'luigi.careddu@gmail.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = '9790e3eaccab51612abd359c96b238c542f082affd2a07eec01c5b317b119f01' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Binary data inserted for `string` type on column `reset_password_token`
+  [1m[36mSQL (6.7ms)[0m  [1mUPDATE "users" SET "reset_password_token" = ?, "reset_password_sent_at" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["reset_password_token", "9790e3eaccab51612abd359c96b238c542f082affd2a07eec01c5b317b119f01"], ["reset_password_sent_at", Sun, 02 Mar 2014 07:35:40 UTC +00:00], ["updated_at", Sun, 02 Mar 2014 07:35:40 UTC +00:00]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  Rendered users/mailer/reset_password_instructions.html.erb (2.1ms)
+
+Sent mail to luigi.careddu@gmail.com (24.8ms)
+Date: Sun, 02 Mar 2014 08:35:41 +0100
+From: aws-no-reply@alitalia.it
+Reply-To: aws-no-reply@alitalia.it
+To: luigi.careddu@gmail.com
+Message-ID: <5312df4d9694e_1ada3fc0ed8362545264@AirMac.local.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello luigi.careddu@gmail.com!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://ub01:3000/users/password/edit?reset_password_token=UMJzE7w3cWEfc_Knizvd">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 2113ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-02 08:35:41 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.erb (0.8ms)
+  Rendered users/sessions/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 29ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/planes.css?body=1" for 127.0.0.1 at 2014-03-02 08:35:41 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-03-02 08:35:41 +0100
+
+
+
+
+Started GET "/assets/planes.js?body=1" for 127.0.0.1 at 2014-03-02 08:35:41 +0100
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-03-02 08:35:41 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-02 08:35:41 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-02 08:35:41 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-02 08:35:41 +0100
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-02 08:35:50 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.erb (0.8ms)
+  Rendered users/sessions/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-03-02 08:35:50 +0100
+
+
+Started GET "/assets/planes.css?body=1" for 127.0.0.1 at 2014-03-02 08:35:50 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-03-02 08:35:50 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-02 08:35:50 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-02 08:35:50 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-02 08:35:50 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-02 08:35:50 +0100
+
+
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-02 08:35:50 +0100
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-02 08:35:50 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 127.0.0.1 at 2014-03-02 08:35:50 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-03-02 08:35:50 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-02 08:35:50 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-02 08:35:50 +0100
+
+
+Started HEAD "/" for 127.0.0.1 at 2014-03-02 08:43:18 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-02 08:43:18 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+  Rendered welcome/index.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 372ms
+
+ActionView::Template::Error (undefined local variable or method `new_user_registration_path' for #<#<Class:0x007fd4641332e8>:0x007fd4641311f0>):
+    28:             <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+    29:             <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+    30:           <% else %>
+    31:             <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+    32:             <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+    33:           <% end %>
+    34:         </div><!--/.nav-collapse -->
+  app/views/layouts/application.html.erb:31:in `_app_views_layouts_application_html_erb__938635291155559940_70275094611180'
+
+
+Completed 500 Internal Server Error in 476ms
+
+ActionView::Template::Error (undefined local variable or method `new_user_registration_path' for #<#<Class:0x007fd464120648>:0x007fd46412a058>):
+    28:             <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+    29:             <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+    30:           <% else %>
+    31:             <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+    32:             <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+    33:           <% end %>
+    34:         </div><!--/.nav-collapse -->
+  app/views/layouts/application.html.erb:31:in `_app_views_layouts_application_html_erb__938635291155559940_70275094617880'
+
+
+  Rendered /Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (32.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-02 08:43:19 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+  Rendered /Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.9ms)
+Completed 500 Internal Server Error in 43ms
+  Rendered /Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (69.6ms)
+
+ActionView::Template::Error (undefined local variable or method `new_user_registration_path' for #<#<Class:0x007fd4641332e8>:0x007fd4641d28e8>):
+    28:             <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+    29:             <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+    30:           <% else %>
+    31:             <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+    32:             <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+    33:           <% end %>
+    34:         </div><!--/.nav-collapse -->
+  app/views/layouts/application.html.erb:31:in `_app_views_layouts_application_html_erb__938635291155559940_70275094611180'
+
+
+  Rendered /Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+  Rendered /Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-03-02 08:43:36 +0100
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 10ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-02 08:43:36 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.erb (2.4ms)
+  Rendered users/sessions/new.html.erb within layouts/application (32.0ms)
+Completed 500 Internal Server Error in 192ms
+
+ActionView::Template::Error (undefined local variable or method `new_user_registration_path' for #<#<Class:0x007fd464133b80>:0x007fd4641304a8>):
+    28:             <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+    29:             <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+    30:           <% else %>
+    31:             <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+    32:             <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+    33:           <% end %>
+    34:         </div><!--/.nav-collapse -->
+  app/views/layouts/application.html.erb:31:in `_app_views_layouts_application_html_erb__938635291155559940_70275094611180'
+
+
+  Rendered /Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.4ms)
+  Rendered /Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (27.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-02 08:44:47 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.erb (0.5ms)
+  Rendered users/sessions/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 34ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-02 08:44:47 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-03-02 08:44:47 +0100
+
+
+Started GET "/assets/planes.css?body=1" for 127.0.0.1 at 2014-03-02 08:44:47 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-03-02 08:44:47 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-02 08:44:47 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-02 08:44:47 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-02 08:44:47 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-02 08:44:47 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-02 08:44:47 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 127.0.0.1 at 2014-03-02 08:44:47 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-03-02 08:44:47 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-02 08:44:47 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-02 08:44:47 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-02 08:44:52 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-02 08:44:55 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.erb (0.6ms)
+  Rendered users/sessions/new.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 42ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-03-02 08:45:03 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ofmd+xYu7xbZVIS4PQT7IbhPVcRJmFGsMAlRkTh0zAI=", "user"=>{"email"=>"luigi.careddu@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'luigi.careddu@gmail.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["last_sign_in_at", Sun, 02 Mar 2014 07:32:09 UTC +00:00], ["current_sign_in_at", Sun, 02 Mar 2014 07:45:04 UTC +00:00], ["sign_in_count", 15], ["updated_at", Sun, 02 Mar 2014 07:45:04 UTC +00:00]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 193ms (ActiveRecord: 10.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-03-02 08:45:04 +0100
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 54ms (Views: 46.7ms | ActiveRecord: 1.2ms)
+
+
+
+
+Started GET "/assets/planes.css?body=1" for 127.0.0.1 at 2014-03-02 08:45:04 +0100
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-03-02 08:45:04 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-02 08:45:04 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 127.0.0.1 at 2014-03-02 08:45:04 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-03-02 08:45:04 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-02 08:45:04 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
