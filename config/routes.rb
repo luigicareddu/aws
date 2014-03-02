@@ -1,5 +1,10 @@
 Aws::Application.routes.draw do
+  #get "users/destroy"
+  #get "users/index"
+  #get "users/show"
   devise_for :users
+  resources :users
+  
   resources :posts
 
   resources :planes

@@ -5,5 +5,5 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Define the different user roles
-  ROLES = %w[admin moderator author banned]
+  ROLES = %w[admin ids user]
 end
