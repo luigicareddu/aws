@@ -1,10 +1,23 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>email:</strong>
+  <strong>Username:</strong>
+  <%= @user.username %>
+</p>
+<p>
+  <strong>First Name:</strong>
+  <%= @user.first_name %>
+</p>
+<p>
+  <strong>Last Name:</strong>
+  <%= @user.last_name %>
+</p>
+<p>
+  <strong>Email:</strong>
   <%= @user.email %>
 </p>
 <p>
-  <strong>role:</strong>
+  <strong>Role:</strong>
   <%= @user.role %>
 </p>
+<%= link_to 'Back', users_path, class: 'btn btn-default' %>

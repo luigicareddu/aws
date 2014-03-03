@@ -11903,3 +11903,1317 @@ Processing by UsersController#index as HTML
   [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
   Rendered users/index.html.erb within layouts/application (5.3ms)
 Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-03-02 16:39:53 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-02 16:39:53 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-03-02 16:39:53 +0100
+
+
+Started GET "/assets/planes.css?body=1" for 127.0.0.1 at 2014-03-02 16:39:53 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-03-02 16:39:53 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-03-02 16:39:53 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-02 16:39:53 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-02 16:39:54 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-02 16:39:54 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-02 16:39:54 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-02 16:39:54 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 127.0.0.1 at 2014-03-02 16:39:54 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-03-02 16:39:54 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-03-02 16:39:54 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-02 16:39:54 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-02 16:39:54 +0100
+
+
+Started HEAD "/" for 127.0.0.1 at 2014-03-03 22:03:22 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (2.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 444ms (Views: 372.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-03 22:04:54 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 83ms (Views: 81.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-03 22:04:54 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-03-03 22:04:54 +0100
+
+
+Started GET "/assets/planes.css?body=1" for 127.0.0.1 at 2014-03-03 22:04:55 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-03-03 22:04:55 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-03-03 22:04:55 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-03 22:04:55 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-03 22:04:55 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-03 22:04:55 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-03 22:04:55 +0100
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-03 22:04:55 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-03-03 22:04:55 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 127.0.0.1 at 2014-03-03 22:04:55 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-03 22:04:55 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-03 22:04:55 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-03-03 22:04:55 +0100
+
+
+Started GET "/users" for 127.0.0.1 at 2014-03-03 22:04:58 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (41.6ms)
+Completed 200 OK in 395ms (Views: 350.0ms | ActiveRecord: 1.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUsernameToUsers (20140303210636)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mALTER TABLE "users" ADD "username" varchar(255)[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "first_name" varchar(255)
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "last_name" varchar(255)[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140303210636"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/users" for 127.0.0.1 at 2014-03-03 22:13:31 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (40.9ms)
+Completed 200 OK in 69ms (Views: 66.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-03 22:13:32 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-03-03 22:13:32 +0100
+
+
+Started GET "/assets/planes.css?body=1" for 127.0.0.1 at 2014-03-03 22:13:32 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-03-03 22:13:32 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-03-03 22:13:32 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-03 22:13:32 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-03 22:13:32 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-03 22:13:32 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-03 22:13:32 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-03 22:13:32 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 127.0.0.1 at 2014-03-03 22:13:32 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-03-03 22:13:32 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-03-03 22:13:32 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-03 22:13:32 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-03 22:13:32 +0100
+
+
+Started GET "/users" for 127.0.0.1 at 2014-03-03 22:16:51 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-03 22:16:51 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-03-03 22:16:51 +0100
+
+
+Started GET "/assets/planes.css?body=1" for 127.0.0.1 at 2014-03-03 22:16:51 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-03-03 22:16:51 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-03 22:16:51 +0100
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-03-03 22:16:51 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-03 22:16:51 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-03 22:16:51 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-03 22:16:51 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-03 22:16:51 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 127.0.0.1 at 2014-03-03 22:16:51 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-03-03 22:16:51 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-03-03 22:16:51 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-03 22:16:51 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-03 22:16:51 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-03-03 22:16:55 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/_form.html.erb (52.6ms)
+  Rendered users/edit.html.erb within layouts/application (63.2ms)
+Completed 200 OK in 443ms (Views: 355.2ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2014-03-03 22:17:09 +0100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZM8+PEpsu+OkoC1ANj/vqV50kFRHRLoMUmRDgIo7QNM=", "user"=>{"username"=>"ca040170", "first_name"=>"Luigi", "last_name"=>"Careddu", "email"=>"luigi.careddu@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"admin"}, "commit"=>"Update User", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (8.9ms)[0m  [1mUPDATE "users" SET "username" = ?, "first_name" = ?, "last_name" = ?, "role" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["username", "ca040170"], ["first_name", "Luigi"], ["last_name", "Careddu"], ["role", "admin"], ["updated_at", Mon, 03 Mar 2014 21:17:09 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 31ms (ActiveRecord: 10.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-03-03 22:17:09 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/planes.css?body=1" for 127.0.0.1 at 2014-03-03 22:17:09 +0100
+
+
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-03 22:17:09 +0100
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-03-03 22:17:09 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 127.0.0.1 at 2014-03-03 22:17:09 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-03-03 22:17:09 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-03-03 22:17:09 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-03-03 22:17:09 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-03 22:17:09 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/users" for 127.0.0.1 at 2014-03-03 22:17:15 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (46.4ms)
+Completed 200 OK in 370ms (Views: 321.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-03-03 22:17:25 +0100
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (39.4ms)
+  Rendered users/new.html.erb within layouts/application (45.5ms)
+Completed 200 OK in 65ms (Views: 63.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-03-03 22:18:07 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZM8+PEpsu+OkoC1ANj/vqV50kFRHRLoMUmRDgIo7QNM=", "user"=>{"username"=>"ca0123456", "first_name"=>"Mario", "last_name"=>"Rossi", "email"=>"rossi.mario@alitalia.it", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"user"}, "commit"=>"Create User"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.8ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'rossi.mario@alitalia.it' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (8.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "first_name", "last_name", "role", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 03 Mar 2014 21:18:07 UTC +00:00], ["email", "rossi.mario@alitalia.it"], ["encrypted_password", "$2a$10$RRPrRJsN6srjWar6zwSD9uprIchvh9rBTo.a9ePqUFE7MD853gwXW"], ["first_name", "Mario"], ["last_name", "Rossi"], ["role", "user"], ["updated_at", Mon, 03 Mar 2014 21:18:07 UTC +00:00], ["username", "ca0123456"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 199ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2014-03-03 22:18:08 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/planes.css?body=1" for 127.0.0.1 at 2014-03-03 22:18:08 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-03-03 22:18:08 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-03 22:18:08 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 127.0.0.1 at 2014-03-03 22:18:08 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-03-03 22:18:08 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-03-03 22:18:08 +0100
+
+
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-03 22:18:08 +0100
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-03-03 22:18:08 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/users" for 127.0.0.1 at 2014-03-03 22:18:15 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (52.8ms)
+Completed 200 OK in 377ms (Views: 332.0ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/users/5" for 127.0.0.1 at 2014-03-03 22:18:24 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZM8+PEpsu+OkoC1ANj/vqV50kFRHRLoMUmRDgIo7QNM=", "id"=>"5"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (4.9ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 5]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/users
+Completed 302 Found in 21ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-03-03 22:18:24 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-03-03 22:18:24 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-03-03 22:18:24 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-03 22:18:24 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-03-03 22:18:24 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 127.0.0.1 at 2014-03-03 22:18:24 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-03-03 22:18:24 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-03 22:18:24 +0100
+
+
+Started GET "/assets/planes.css?body=1" for 127.0.0.1 at 2014-03-03 22:18:24 +0100
+
+
+Started DELETE "/users/3" for 127.0.0.1 at 2014-03-03 22:18:30 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZM8+PEpsu+OkoC1ANj/vqV50kFRHRLoMUmRDgIo7QNM=", "id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 3]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 10ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-03-03 22:18:30 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/planes.css?body=1" for 127.0.0.1 at 2014-03-03 22:18:30 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-03-03 22:18:30 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-03-03 22:18:30 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-03 22:18:30 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 127.0.0.1 at 2014-03-03 22:18:30 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-03-03 22:18:30 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-03-03 22:18:30 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-03 22:18:30 +0100
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-03-03 22:20:05 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-03-03 22:22:33 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-03-03 22:22:51 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-03 22:22:51 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-03-03 22:22:51 +0100
+
+
+Started GET "/assets/planes.css?body=1" for 127.0.0.1 at 2014-03-03 22:22:51 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-03-03 22:22:51 +0100
+
+
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-03-03 22:22:51 +0100
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-03 22:22:51 +0100
+
+
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-03 22:22:51 +0100
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-03 22:22:51 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-03 22:22:51 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-03 22:22:51 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 127.0.0.1 at 2014-03-03 22:22:51 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-03-03 22:22:51 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-03-03 22:22:51 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-03 22:22:51 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-03 22:22:51 +0100
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-03-03 22:22:55 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/_form.html.erb (48.6ms)
+  Rendered users/edit.html.erb within layouts/application (58.9ms)
+Completed 200 OK in 374ms (Views: 292.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-03-03 22:24:37 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 84ms (Views: 82.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-03-03 22:24:38 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-03-03 22:24:42 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-03-03 22:24:44 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/_form.html.erb (9.2ms)
+  Rendered users/edit.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 32ms (Views: 29.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-03-03 22:26:51 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-03-03 22:27:29 +0100
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 10ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-03 22:27:29 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.erb (2.5ms)
+  Rendered users/sessions/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 45ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-03-03 22:27:31 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 93ms (Views: 91.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-03-03 22:28:04 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-03-03 22:30:31 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+ERROR: compiling _app_views_users__form_html_erb___422004994993888483_70209804507000 RAISED /Users/Giggi/ror/aws/app/views/users/_form.html.erb:43: syntax error, unexpected =>, expecting :: or '[' or '.'
+...er.append=( f.submit, :class => 'btn btn-primary' );@output_...
+...                               ^
+Function body:           def _app_views_users__form_html_erb___422004994993888483_70209804507000(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "users/_form";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append=  form_for(@user) do |f| @output_buffer.safe_append='
+';   if @user.errors.any? 
+@output_buffer.safe_append='    <div id="error_explanation">
+      <h2>';@output_buffer.append=( pluralize(@user.errors.count, "error") );@output_buffer.safe_append=' prohibited this user from being saved:</h2>
+
+      <ul>
+';       @user.errors.full_messages.each do |msg| 
+@output_buffer.safe_append='        <li>';@output_buffer.append=( msg );@output_buffer.safe_append='</li>
+';       end 
+@output_buffer.safe_append='      </ul>
+    </div>
+';   end 
+@output_buffer.safe_append='
+  <div class="field">
+    ';@output_buffer.append=( f.label :username );@output_buffer.safe_append='<br>
+    ';@output_buffer.append=( f.text_field :username, :autofocus => true );@output_buffer.safe_append='
+  </div>
+  <div class="field">
+    ';@output_buffer.append=( f.label :first_name );@output_buffer.safe_append='<br>
+    ';@output_buffer.append=( f.text_field :first_name, :autofocus => true );@output_buffer.safe_append='
+  </div>
+  <div class="field">
+    ';@output_buffer.append=( f.label :last_name );@output_buffer.safe_append='<br>
+    ';@output_buffer.append=( f.text_field :last_name, :autofocus => true );@output_buffer.safe_append='
+  </div>
+  <div class="field">
+    ';@output_buffer.append=( f.label :email );@output_buffer.safe_append='<br>
+    ';@output_buffer.append=( f.text_field :email, :autofocus => true );@output_buffer.safe_append='
+  </div>
+  <div class="field">
+    ';@output_buffer.append=( f.label :password );@output_buffer.safe_append='<i>(leave blank if you don\'t want to change it)</i><br>
+    ';@output_buffer.append=( f.password_field :password, :autocomplete => "off" );@output_buffer.safe_append='
+  </div>
+  <div class="field">
+    ';@output_buffer.append=( f.label :password_confirmation );@output_buffer.safe_append='<br>
+    ';@output_buffer.append=( f.password_field :password_confirmation, :autocomplete => "off" );@output_buffer.safe_append='
+  </div>
+  <div class="field">
+    ';@output_buffer.append=( f.label :role );@output_buffer.safe_append='<br>
+    ';@output_buffer.append=( f.collection_select :role, User::ROLES, :to_s, :humanize );@output_buffer.safe_append='
+  </div>
+  <div class="actions">
+    ';@output_buffer.append=( f.submit, :class => 'btn btn-primary' );@output_buffer.safe_append='
+  </div>
+'; end 
+@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:299:in `module_eval'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:299:in `compile'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:248:in `block in compile!'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:236:in `synchronize'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:236:in `compile!'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:142:in `block in render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:161:in `instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:141:in `render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/partial_renderer.rb:306:in `render_partial'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/partial_renderer.rb:279:in `block in render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/partial_renderer.rb:278:in `render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/renderer.rb:47:in `render_partial'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/Users/Giggi/ror/aws/app/views/users/edit.html.erb:3:in `_app_views_users_edit_html_erb__289095344324070409_70209813644340'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:143:in `block in render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:161:in `instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:141:in `render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/renderer.rb:23:in `render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:97:in `render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/Users/Giggi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/base.rb:189:in `process_action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:413:in `_run__4582479641610427717__process_action__callbacks'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/base.rb:136:in `process'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:44:in `process'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal.rb:195:in `dispatch'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal.rb:231:in `block in action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/journey/router.rb:59:in `each'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/journey/router.rb:59:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:680:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/query_cache.rb:36:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/migration.rb:369:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:373:in `_run__2612049663365386844__call__callbacks'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/rack/logger.rb:38:in `call_app'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/rack/logger.rb:20:in `block in call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/tagged_logging.rb:25:in `tagged'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/tagged_logging.rb:67:in `tagged'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/rack/logger.rb:20:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/static.rb:64:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/engine.rb:511:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/application.rb:97:in `call'
+/usr/local/Cellar/passenger/4.0.29/libexec/lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+/usr/local/Cellar/passenger/4.0.29/libexec/lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+/usr/local/Cellar/passenger/4.0.29/libexec/lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+/usr/local/Cellar/passenger/4.0.29/libexec/lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+  Rendered users/_form.html.erb (7.4ms)
+  Rendered users/edit.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (/Users/Giggi/ror/aws/app/views/users/_form.html.erb:43: syntax error, unexpected =>, expecting :: or '[' or '.'
+...er.append=( f.submit, :class => 'btn btn-primary' );@output_...
+...                               ^):
+    40:     <%= f.collection_select :role, User::ROLES, :to_s, :humanize %>
+    41:   </div>
+    42:   <div class="actions">
+    43:     <%= f.submit, :class => 'btn btn-primary' %>
+    44:   </div>
+    45: <% end %>
+  app/views/users/edit.html.erb:3:in `_app_views_users_edit_html_erb__289095344324070409_70209813644340'
+
+
+  Rendered /Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (34.9ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-03-03 22:30:31 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+ERROR: compiling _app_views_users__form_html_erb___422004994993888483_70209814434620 RAISED /Users/Giggi/ror/aws/app/views/users/_form.html.erb:43: syntax error, unexpected =>, expecting :: or '[' or '.'
+...er.append=( f.submit, :class => 'btn btn-primary' );@output_...
+...                               ^
+Function body:           def _app_views_users__form_html_erb___422004994993888483_70209814434620(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "users/_form";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append=  form_for(@user) do |f| @output_buffer.safe_append='
+';   if @user.errors.any? 
+@output_buffer.safe_append='    <div id="error_explanation">
+      <h2>';@output_buffer.append=( pluralize(@user.errors.count, "error") );@output_buffer.safe_append=' prohibited this user from being saved:</h2>
+
+      <ul>
+';       @user.errors.full_messages.each do |msg| 
+@output_buffer.safe_append='        <li>';@output_buffer.append=( msg );@output_buffer.safe_append='</li>
+';       end 
+@output_buffer.safe_append='      </ul>
+    </div>
+';   end 
+@output_buffer.safe_append='
+  <div class="field">
+    ';@output_buffer.append=( f.label :username );@output_buffer.safe_append='<br>
+    ';@output_buffer.append=( f.text_field :username, :autofocus => true );@output_buffer.safe_append='
+  </div>
+  <div class="field">
+    ';@output_buffer.append=( f.label :first_name );@output_buffer.safe_append='<br>
+    ';@output_buffer.append=( f.text_field :first_name, :autofocus => true );@output_buffer.safe_append='
+  </div>
+  <div class="field">
+    ';@output_buffer.append=( f.label :last_name );@output_buffer.safe_append='<br>
+    ';@output_buffer.append=( f.text_field :last_name, :autofocus => true );@output_buffer.safe_append='
+  </div>
+  <div class="field">
+    ';@output_buffer.append=( f.label :email );@output_buffer.safe_append='<br>
+    ';@output_buffer.append=( f.text_field :email, :autofocus => true );@output_buffer.safe_append='
+  </div>
+  <div class="field">
+    ';@output_buffer.append=( f.label :password );@output_buffer.safe_append='<i>(leave blank if you don\'t want to change it)</i><br>
+    ';@output_buffer.append=( f.password_field :password, :autocomplete => "off" );@output_buffer.safe_append='
+  </div>
+  <div class="field">
+    ';@output_buffer.append=( f.label :password_confirmation );@output_buffer.safe_append='<br>
+    ';@output_buffer.append=( f.password_field :password_confirmation, :autocomplete => "off" );@output_buffer.safe_append='
+  </div>
+  <div class="field">
+    ';@output_buffer.append=( f.label :role );@output_buffer.safe_append='<br>
+    ';@output_buffer.append=( f.collection_select :role, User::ROLES, :to_s, :humanize );@output_buffer.safe_append='
+  </div>
+  <div class="actions">
+    ';@output_buffer.append=( f.submit, :class => 'btn btn-primary' );@output_buffer.safe_append='
+  </div>
+'; end 
+@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:299:in `module_eval'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:299:in `compile'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:248:in `block in compile!'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:236:in `synchronize'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:236:in `compile!'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:142:in `block in render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:161:in `instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:141:in `render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/partial_renderer.rb:306:in `render_partial'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/partial_renderer.rb:279:in `block in render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/partial_renderer.rb:278:in `render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/renderer.rb:47:in `render_partial'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/Users/Giggi/ror/aws/app/views/users/edit.html.erb:3:in `_app_views_users_edit_html_erb__289095344324070409_70209814399180'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:143:in `block in render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:161:in `instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:141:in `render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/renderer.rb:23:in `render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:97:in `render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/Users/Giggi/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/base.rb:189:in `process_action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:413:in `_run__4582479641610427717__process_action__callbacks'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/base.rb:136:in `process'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:44:in `process'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal.rb:195:in `dispatch'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal.rb:231:in `block in action'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/journey/router.rb:59:in `each'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/journey/router.rb:59:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:680:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/query_cache.rb:36:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/migration.rb:369:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:373:in `_run__2612049663365386844__call__callbacks'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/rack/logger.rb:38:in `call_app'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/rack/logger.rb:20:in `block in call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/tagged_logging.rb:25:in `tagged'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/tagged_logging.rb:67:in `tagged'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/rack/logger.rb:20:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/static.rb:64:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/engine.rb:511:in `call'
+/Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/application.rb:97:in `call'
+/usr/local/Cellar/passenger/4.0.29/libexec/lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+/usr/local/Cellar/passenger/4.0.29/libexec/lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+/usr/local/Cellar/passenger/4.0.29/libexec/lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+/usr/local/Cellar/passenger/4.0.29/libexec/lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+  Rendered users/_form.html.erb (2.5ms)
+  Rendered users/edit.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (/Users/Giggi/ror/aws/app/views/users/_form.html.erb:43: syntax error, unexpected =>, expecting :: or '[' or '.'
+...er.append=( f.submit, :class => 'btn btn-primary' );@output_...
+...                               ^):
+    40:     <%= f.collection_select :role, User::ROLES, :to_s, :humanize %>
+    41:   </div>
+    42:   <div class="actions">
+    43:     <%= f.submit, :class => 'btn btn-primary' %>
+    44:   </div>
+    45: <% end %>
+  app/views/users/edit.html.erb:3:in `_app_views_users_edit_html_erb__289095344324070409_70209814399180'
+
+
+  Rendered /Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /Users/Giggi/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.9ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-03-03 22:30:56 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/_form.html.erb (10.1ms)
+  Rendered users/edit.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 34ms (Views: 31.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-03 22:30:56 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-03-03 22:30:56 +0100
+
+
+Started GET "/assets/planes.css?body=1" for 127.0.0.1 at 2014-03-03 22:30:56 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-03-03 22:30:56 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-03-03 22:30:56 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-03 22:30:56 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-03 22:30:57 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-03 22:30:57 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-03 22:30:57 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-03 22:30:57 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 127.0.0.1 at 2014-03-03 22:30:57 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-03-03 22:30:57 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-03-03 22:30:57 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-03 22:30:57 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-03 22:30:57 +0100
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-03-03 22:31:55 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/_form.html.erb (10.1ms)
+  Rendered users/edit.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 34ms (Views: 30.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-03 22:31:55 +0100
+
+
+Started GET "/assets/planes.css?body=1" for 127.0.0.1 at 2014-03-03 22:31:55 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-03-03 22:31:55 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-03-03 22:31:55 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-03-03 22:31:55 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-03 22:31:55 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-03 22:31:55 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-03 22:31:56 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-03 22:31:56 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 127.0.0.1 at 2014-03-03 22:31:56 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-03 22:31:56 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-03-03 22:31:56 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-03-03 22:31:56 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-03 22:31:56 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-03 22:31:56 +0100
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-03-03 22:32:28 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/_form.html.erb (50.8ms)
+  Rendered users/edit.html.erb within layouts/application (60.6ms)
+Completed 200 OK in 451ms (Views: 359.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-03 22:32:29 +0100
+
+
+Started GET "/assets/planes.css?body=1" for 127.0.0.1 at 2014-03-03 22:32:29 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-03-03 22:32:29 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-03-03 22:32:29 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-03-03 22:32:29 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-03 22:32:29 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-03 22:32:29 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-03 22:32:29 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-03 22:32:29 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-03 22:32:29 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 127.0.0.1 at 2014-03-03 22:32:29 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-03-03 22:32:29 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-03-03 22:32:29 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-03 22:32:29 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-03 22:32:29 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-03-03 22:32:59 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/_form.html.erb (108.7ms)
+  Rendered users/edit.html.erb within layouts/application (117.3ms)
+Completed 200 OK in 421ms (Views: 329.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-03 22:33:00 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-03-03 22:33:00 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-03-03 22:33:00 +0100
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-03-03 22:33:00 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-03 22:33:00 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-03 22:33:00 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-03 22:33:00 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-03 22:33:00 +0100
+
+
+Started GET "/assets/planes.css?body=1" for 127.0.0.1 at 2014-03-03 22:33:00 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-03 22:33:00 +0100
+
+
+Started GET "/assets/planes.js?body=1" for 127.0.0.1 at 2014-03-03 22:33:00 +0100
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-03-03 22:33:00 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-03-03 22:33:00 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-03 22:33:00 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-03 22:33:00 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/users" for 127.0.0.1 at 2014-03-03 22:33:15 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (46.1ms)
+Completed 200 OK in 369ms (Views: 325.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-03-03 22:33:17 +0100
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (45.5ms)
+  Rendered users/new.html.erb within layouts/application (54.0ms)
+Completed 200 OK in 74ms (Views: 72.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-03-03 22:33:20 +0100
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 10ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-03 22:33:20 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.erb (2.4ms)
+  Rendered users/sessions/new.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 42ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/planes" for 127.0.0.1 at 2014-03-03 22:33:22 +0100
+Processing by PlanesController#index as HTML
+  [1m[36mPlane Load (0.8ms)[0m  [1mSELECT "planes".* FROM "planes"[0m
+  Rendered planes/index.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 51ms (Views: 44.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/planes/new" for 127.0.0.1 at 2014-03-03 22:33:25 +0100
+Processing by PlanesController#new as HTML
+  Rendered planes/_form.html.erb (11.8ms)
+  Rendered planes/new.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-03-03 22:33:30 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-03-03 22:33:32 +0100
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (14.6ms)
+  Rendered users/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-03-03 22:33:38 +0100
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-03 22:33:38 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.erb (0.6ms)
+  Rendered users/sessions/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 31ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/planes" for 127.0.0.1 at 2014-03-03 22:33:39 +0100
+Processing by PlanesController#index as HTML
+  [1m[36mPlane Load (0.3ms)[0m  [1mSELECT "planes".* FROM "planes"[0m
+  Rendered planes/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/planes/1/edit" for 127.0.0.1 at 2014-03-03 22:33:42 +0100
+Processing by PlanesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlane Load (0.5ms)[0m  SELECT "planes".* FROM "planes" WHERE "planes"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered planes/_form.html.erb (9.1ms)
+  Rendered planes/edit.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 90ms (Views: 85.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-03-03 22:33:54 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-03-03 22:34:02 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 34ms (Views: 31.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-03-03 22:34:09 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 29ms (Views: 24.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-03-03 22:35:41 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 24ms (Views: 20.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-03-03 22:35:43 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.3ms)
